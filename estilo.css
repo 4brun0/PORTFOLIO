@@ -1,34 +1,35 @@
-/* Reset de estilos para garantir consistência entre navegadores */
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
 header {
-    background-color: #f0f0f0;
+    background-color: #333;
+    color: #fff;
     padding: 20px 0;
     text-align: center;
 }
 
-h1 {
-    color: #333;
+nav {
+    margin-top: 20px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-size: 1.2em;
     margin: 0 20px;
 }
@@ -39,21 +40,25 @@ main {
 
 section {
     margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos específicos para cada seção */
-#inicio {
-    background-color: #e0e0e0;
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    margin-top: 20px;
 }
 
-#sobre {
-    background-color: #d0d0d0;
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
-#cinematografia {
-    background-color: #c0c0c0;
-}
-
-#contato {
-    background-color: #b0b0b0;
-}
